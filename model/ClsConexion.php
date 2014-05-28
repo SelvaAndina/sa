@@ -8,13 +8,13 @@
 */
  Class ClsConexion
 {
-	private static $db_host = '127.0.0.1';
+    private static $db_host = '127.0.0.1';
     private static $db_user = 'root';
     private static $db_pass = '';
-	protected $db_driver = 'pgsql';
-    protected $db_name = 'db_selva';
+    protected $db_driver    = 'mysql';
+    protected $db_name      = 'app_sa';
     protected $query;
-    protected $rows = array();
+    protected $rows         = array();
     private $conn;
     # variable para controlar transacciones
     protected $hasActiveTransaction = false;
