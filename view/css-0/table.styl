@@ -1,0 +1,101 @@
+// MIXINS
+border-radius(a)
+    -webkit-border-radius a
+    -moz-border-radius a
+    border-radius a
+
+.table
+  width 100%
+  font-family "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
+  border solid #ccc 1px;
+  border-left none
+  border-radius(5px)
+  box-shadow 0 1px 2px #d1d1d1
+  -moz-box-shadow 0 1px 2px #d1d1d1
+  -webkit-box-shadow 0 1px 2px #d1d1d1
+
+  td, th
+    border-top 1px solid #ccc
+    border-left 1px solid #ccc
+    padding 10px
+  th
+
+    box-shadow 0 1px 0 rgba(255,255,255,.8) inset
+    -moz-box-shadow 0 1px 0 rgba(255,255,255,.8) inset
+    -webkit-box-shadow 0 1px 0 rgba(255,255,255,.8) inset
+    border-top none
+    font-size .9em
+    line-height 20px
+    text-align center
+    text-shadow 0 1px 0 rgba(255,255,255,.5)
+  td
+    color #000
+    font-size 0.8em
+  tr
+    &:first-child
+      th
+        &:first-child
+          border-top-left-radius 5px
+          -moz-border-radius-topleft 5px
+          -webkit-border-top-left-radius 5px
+        &:last-child
+          border-top-right-radius 5px
+          -moz-border-radius-topright 5px
+          -webkit-border-top-right-radius 5px
+    &:last-child
+      td
+        &:first-child
+          border-bottom-left-radius 5px
+          -moz-border-radius-bottomleft 5px
+          -webkit-border-bottom-left-radius 5px
+        &:last-child
+          border-bottom-right-radius 5px
+          -moz-border-radius-bottomright 5px
+          -webkit-border-bottom-right-radius 5px
+    &.even
+      td
+        background-color #fafafa
+    th
+      a
+        color #006600
+        text-decoration underline
+        line-height inherit
+        &:hover
+          color #7C6868
+        &:focus
+          color #7C6868
+          outline none
+    td
+      a
+        text-decoration none
+.table.td-small th
+    line-height 15px
+
+.table.td-min th
+  line-height 5px
+
+.table.td-small td
+  padding 5px
+
+.table.td-min td
+  padding 1px
+
+.table-hover tr:hover td
+  font-weight bold
+  background-color #f5f5f5
+
+.table-hover tr:hover th
+.table-hover tr:hover td
+    cursor pointer
+
+.table-zebra
+  tbody
+    tr
+      &:nth-child(even)
+        background #F0F0F0
+        -webkit-box-shadow 0 1px 0 rgba(255,255,255,.6) inset
+        -moz-box-shadow 0 1px 0 rgba(255,255,255,.6) inset
+        box-shadow 0 1px 0 rgba(255,255,255,.6) inset
+
+
+

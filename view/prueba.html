@@ -1,0 +1,249 @@
+<h2 style="background-color: white; border: 0px; color: #555555; font-family: 'Bree Serif', serif; font-weight: normal; margin: 0px 0px 0.5em; outline: 0px; padding: 0px; text-align: center; text-shadow: rgb(51, 51, 51) 0px 0px 1px; vertical-align: baseline;">
+<span style="font-size: x-large;">Stylus como tu preprocesador de código CSS</span><span style="font-size: large;">&nbsp;</span></h2>
+<div>
+<span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">Escribir código&nbsp;</span><em style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">&nbsp;sin un preprocesador a día de hoy es una tarea ardua, sobre todo si estamos desarrollando un proyecto de dimensión considerable que ha de estar optimizado y debe ser fácil de mantener y actualizar. Para ayudarnos en esta tarea tenemos estas herramientas que consisten en ahorrarnos parte del trabajo que conlleva el escribir código&nbsp;</span><em style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">, de manera que el resultado es una mayor comodidad y rápidez en nuestro trabajo. Existen varios preprocesadores a nuestra disposición como&nbsp;</span><a href="http://lesscss.org/" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: white; color: #4e75b4; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;" title="Less CSS"><em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Less</em></a><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">,</span><a href="http://sass-lang.com/" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: white; color: #4e75b4; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;" title="Sass"><em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Sass</em></a><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">&nbsp;(</span><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">) o al que hoy pretendo dedicar este artículo:&nbsp;</span><a href="http://learnboost.github.io/stylus/" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: white; color: #4e75b4; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;" title="Stylus CSS"><strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</strong></a><span style="background-color: white; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 24px;">.</span></div>
+<div>
+<h2 style="background-color: white; border: 0px; color: #333333; font-family: 'Bree serif'; font-weight: normal; margin: 1.3em 0px; outline: 0px; padding: 0px; text-shadow: rgb(51, 51, 51) 0px 0px 1px; vertical-align: baseline;">
+Cómo empezar a utilizar Stylus</h2>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Para utilizar este preprocesador es necesario instalar&nbsp;<a href="http://nodejs.org/" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: transparent; color: #4e75b4; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;" title="Node.js"><strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Node.js</strong></a>&nbsp;en nuestro entorno de trabajo. Para ello tendremos que descargárnoslo e instalar la versión correspondiente según nuestro sistema operativo.</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+<img alt="node-js" class="aligncenter size-full wp-image-3187" src="http://www.adwe.es/wp-content/uploads/2013/12/node-js.png" height="290" style="background-color: transparent; border: 0px; display: block; height: auto; margin: 0px auto; max-width: 100%; outline: 0px; padding: 10px; vertical-align: baseline;" width="600" /></div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+A continuación tendremos que instalar&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</em>&nbsp;desde nuestro terminal o línea de comandos, de la siguiente manera:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+npm install -g stylus</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Con el prefijo -g, indicamos que deseamos que&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</em>&nbsp;funcione en cualquier ubicación de nuestro equipo.</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+<a href="http://www.adwe.es/wp-content/uploads/2013/12/stylus-installing.png" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: transparent; color: #4e75b4; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;"><img alt="stylus-installing" class="aligncenter size-full wp-image-3173" src="http://www.adwe.es/wp-content/uploads/2013/12/stylus-installing.png" height="367" style="background-color: transparent; border: 0px; display: block; height: auto; margin: 0px auto; max-width: 100%; outline: 0px; padding: 10px; vertical-align: baseline;" width="676" /></a></div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; text-align: center; vertical-align: baseline;">
+<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Si todo ha ido bien veremos el proceso de instalación en nuestra línea de comandos.</em></div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Para empezar a trabajar necesitaremos crear un archivo con extensión&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">.styl</em>&nbsp;que será dónde escribiremos nuestro código&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>&nbsp;sin compilar y con la sintáxis de&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</em>. Respecto a esto último, el principal problema que tendremos al escribir&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>&nbsp;en un archivo con una extensión distinta a los archivos de estilo convencionales es que el código no se nos coloreará. Para solucionar este problema os recomiendo utilizar&nbsp;<a href="http://www.sublimetext.com/2" style="-webkit-tap-highlight-color: rgb(255, 152, 0); background-color: transparent; color: #4e75b4; margin: 0px; padding: 0px; text-decoration: none; vertical-align: baseline;" title="SublimeText2"><strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">SublimeText2</strong></a>&nbsp;(por su versatilidad a la hora de instalar extensiones y plugins que nos facilitan el trabajo) y la sintáxis de&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</em>. Hay diversos tutoriales de cómo funciona el sistema de paquetes y extensiones de&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">SublimeText2</em>&nbsp;así que os invito a que utilicéis vuestras grandes dotes de rastreadores de la red que seguro que poseéis.</div>
+<h2 style="background-color: white; border: 0px; color: #333333; font-family: 'Bree serif'; font-weight: normal; margin: 1.3em 0px; outline: 0px; padding: 0px; text-shadow: rgb(51, 51, 51) 0px 0px 1px; vertical-align: baseline;">
+Escribir CSS de la forma más natural posible</h2>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Si de lo que se trata es de seguir escribiendo&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>&nbsp;de manera más rápida y cómoda posible, ¿qué tal si nos olvidamos de las llaves, los dos puntos y los punto y coma que lleva cada regla&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>?<br />
+Gracias a Stylus tendremos la opción de escribir nuestra hoja de estilos de esta manera:</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS normal:</strong></div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4<br />
+5</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+body{<br />
+&nbsp; &nbsp; background-color: blue;<br />
+&nbsp; &nbsp; font-size: 1.2em;<br />
+&nbsp; &nbsp; margin: 2em 5%;<br />
+}</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS Stylus</strong></div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+body<br />
+&nbsp; &nbsp; background-color blue<br />
+&nbsp; &nbsp; font-size 1.2em<br />
+&nbsp; &nbsp; margin 2em 5%</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Para escribir una clase es de la misma manera sin olvidar su prefijo:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+.wrapper<br />
+&nbsp; &nbsp; width 100%<br />
+&nbsp; &nbsp; max-width 1000px<br />
+&nbsp; &nbsp; margin 0 auto</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Otra de las ventajas que presenta stylus es la manera que tiene de escribir selectores descendentes de la siguiente forma:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+6<br />
+7<br />
+8<br />
+9<br />
+10<br />
+11</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+nav<br />
+&nbsp; &nbsp; float left<br />
+&nbsp; &nbsp; margin-right 2%<br />
+&nbsp; &nbsp; ul<br />
+&nbsp; &nbsp; &nbsp; &nbsp; list-style none<br />
+&nbsp; &nbsp; &nbsp; &nbsp; li<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; float left<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; background-color #333<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; color white<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; display block</div>
+</td></tr>
+</tbody></table>
+</div>
+<h4 style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 1.2em; margin: 0px 0px 1em; outline: 0px; padding: 0px; text-transform: uppercase; vertical-align: baseline;">
+VARIABLES</h4>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+También tenemos la opción de utilizar variables para reutilizarlas a lo largo de nuestra hoja de estilos, por ejemplo:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+font-size = 14px<br />
+<br style="line-height: 1.4em;" />
+body<br />
+&nbsp; &nbsp; font font-size Arial, sans-serif</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Este ejemplo podríamos extenderlo de la siguiente manera:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4<br />
+5</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+font-size = 14px<br />
+font = font-size ‘Open Sans’, Arial, sans-serif<br />
+<br style="line-height: 1.4em;" />
+body<br />
+&nbsp; &nbsp; font font</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Que daría como resultado el siguiente&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>&nbsp;normal:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+body{<br />
+&nbsp; &nbsp; font: 14px ‘Open Sans’, Arial, sans-serif;<br />
+}</div>
+</td></tr>
+</tbody></table>
+</div>
+<h4 style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 1.2em; margin: 0px 0px 1em; outline: 0px; padding: 0px; text-transform: uppercase; vertical-align: baseline;">
+MIXINS</h4>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Con los mixins podemos crear funciones que declararán por nosotros una serie de estilos predefinidos:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+border-radius(a)<br />
+&nbsp; &nbsp; -webkit-border-radius a<br />
+&nbsp; &nbsp; -moz-border-radius a<br />
+&nbsp; &nbsp; border-radius a</div>
+</td></tr>
+</tbody></table>
+</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+button.btn<br />
+&nbsp; &nbsp; border-radius(10px)</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+<strong style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Resultado CSS:</strong></div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1<br />
+2<br />
+3<br />
+4<br />
+5</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+button.btn{<br />
+&nbsp; &nbsp; -webkit-border-radius:10px;<br />
+&nbsp; &nbsp; -moz-border-radius:10px;<br />
+&nbsp; &nbsp; border-radius:10px;<br />
+}</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Por último, me queda explicar cómo tenemos que compilar este archivo&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">.styl</em>&nbsp;para convertirlo en un archivo corriente&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>. Para ello tendremos que ir a nuestro terminal o a nuestra línea de comandos y ejecutar el siguiente código:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+stylus -c style.styl</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Es muy importante tener en cuenta que tendremos que movernos a la carpeta donde estén situados los archivos a compilar.<br />
+Seguramente os preguntaréis, ¿y si tengo que comprobar varios cambios en poco tiempo, tengo que compilar cada vez el archivo?. La respuesta es no. Para trabajar de una manera bastante más fluida y parecida a escribir un archivo&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>&nbsp;normal, podemos añadir un prefijo al comando anterior y ejecutarlo:</div>
+<div class="codecolorer-container text default" style="background-color: #f1f1f1; border: 1px solid rgb(159, 159, 159); font-family: Monaco, 'Lucida Console', monospace; font-size: 13px; line-height: 1.4em; margin: 0px 0px 10px; outline: 0px; overflow: auto; padding: 0px; vertical-align: baseline; white-space: nowrap;;">
+<table cellpadding="0" cellspacing="0" style="background-color: transparent; border-collapse: collapse; border-spacing: 0px; border: 0px; font-size: 13px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><tbody style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">
+<tr style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;"><td class="line-numbers" style="background-color: #eeeeee; border-right-color: rgb(159, 159, 159); border-right-style: solid; border-width: 0px 1px 0px 0px; color: #888888; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; text-align: right; vertical-align: top;"><div style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline; width: 23px;">
+1</div>
+</td><td style="background-color: transparent; border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 0px; vertical-align: top;"><div class="text codecolorer" style="border: 0px; line-height: 1.4em; margin: 0px; outline: 0px; padding: 5px; vertical-align: baseline;">
+stylus -c -w style.styl</div>
+</td></tr>
+</tbody></table>
+</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+De este modo,&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">Stylus</em>&nbsp;se encargará de observar los cambios que se realicen a dicho archivo y en cuanto se produzcan, se pondrá a compilar para que tengamos los cambios de manera instantánea.</div>
+<div style="background-color: white; border: 0px; color: #333333; font-family: 'Source Sans Pro', sans-serif; font-size: 16px; line-height: 1.5em; margin-bottom: 1em; outline: 0px; padding: 0px; vertical-align: baseline;">
+Y esto es todo, en el siguiente artículo veremos más cosas de este preprocesador de código&nbsp;<em style="background-color: transparent; border: 0px; margin: 0px; outline: 0px; padding: 0px; vertical-align: baseline;">CSS</em>, además de mostraros una extensión que nos traerá una serie de mejoras (si es que no teníais suficiente con todo esto!).</div>
+</div>
